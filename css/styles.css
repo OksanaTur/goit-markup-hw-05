@@ -308,16 +308,18 @@ img{
 }
 .images-item-overlay {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--light-font-color);
     background-color: rgba(47, 48, 58, 0.8);
     bottom: 0;
     width: 100%;
-    text-align: center;
+    height: 70px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    
 }
 
 .employee-list{
@@ -370,7 +372,7 @@ img{
     border-radius: 50%;
     color: var(--icons);
     background-color: var(--bgd-light-color);
-    transition: background-color var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func), color var(--light-font-color);
 }
 .social-link:hover,
 .social-link:focus{
@@ -430,7 +432,7 @@ img{
     color: var(--main-font-color);
     background-color: var(--bgd-secondary-color);
     transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func),
-    box-shadow var(--transition-dur-and-func), border-radius var(--transition-dur-and-func);
+    box-shadow var(--transition-dur-and-func);
 }
 
 .buttons-list{
@@ -466,7 +468,6 @@ img{
 .work-example{
     padding: 20px 24px;
     border: 1px solid var(--second-border-line);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     border-top: 0;
 }
 
@@ -476,6 +477,7 @@ img{
 }
 .list-examples-overlay {
     position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
     color: var(--light-font-color);
     font-size: 18px;
     line-height: 1.55;
@@ -483,7 +485,7 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 101%;
     overflow: auto;
     transform: translateY(100%);
     transition: transform var(--transition-dur-and-func);
@@ -491,7 +493,6 @@ img{
 .link-illustration:hover .list-examples-overlay,
 .link-illustration:focus .list-examples-overlay{
     transform: translateY(0%);
-    background-color: rgba(33, 150, 243, 0.9);
 }
 
 .example {
